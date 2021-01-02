@@ -227,7 +227,7 @@ AM_CONDITIONAL([ENABLE_DOCBOOK], [test "x$db2xman" != "x"])
 AM_CONDITIONAL([USE_DOCBOOK2X], [test "x$db2xman" != "xdocbook2man"])
 
 if test "x$db2xman" = "xdocbook2man"; then
-	docdtd="\"-//Davenport//DTD DocBook V3.0//EN\""
+	docdtd="\"-//OASIS//DTD DocBook XML\" \"https://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd\""
 else
 	docdtd="\"-//OASIS//DTD DocBook XML\" \"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd\""
 fi
